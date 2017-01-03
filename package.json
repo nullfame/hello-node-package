@@ -2,9 +2,9 @@
   "name": "hello",
   "version": "0.1.0",
   "description": "Simple \"Hello, World\" module",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "babel-node test.js"
+    "test": "babel-node tests/test.js"
   },
   "keywords": [
     "hello",
