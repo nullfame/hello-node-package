@@ -12,6 +12,7 @@
   ],
   "author": "Adam Finlayson",
   "license": "UNLICENSED",
+  "private": true,
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-polyfill": "^6.20.0",
