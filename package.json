@@ -1,15 +1,33 @@
 {
   "name": "hello",
   "version": "0.1.0",
-  "description": "Simple \"Hello, World\" module",
-  "main": "index.js",
+  "description": "Simple \"Hello, World\" package",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir build",
+    "clean": "rm -rf build/",
+    "prepublish": "npm run clean | npm run build",
+    "preversion": "npm run clean | npm run build; git add build/*",
+    "test": "babel-node tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nullfame/hello-node-package.git"
   },
   "keywords": [
     "hello",
     "world"
   ],
   "author": "Adam Finlayson",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/nullfame/hello-node-package/issues"
+  },
+  "homepage": "https://github.com/nullfame/hello-node-package#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0"
+  }
 }
