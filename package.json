@@ -10,6 +10,10 @@
     "preversion": "npm run clean | npm run build; git add build/*",
     "test": "babel-node tests/test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nullfame/hello-node-package.git"
+  },
   "keywords": [
     "hello",
     "world"
@@ -17,6 +21,10 @@
   "author": "Adam Finlayson",
   "license": "UNLICENSED",
   "private": true,
+  "bugs": {
+    "url": "https://github.com/nullfame/hello-node-package/issues"
+  },
+  "homepage": "https://github.com/nullfame/hello-node-package#readme",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-polyfill": "^6.20.0",
