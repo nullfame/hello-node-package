@@ -1,7 +1,7 @@
 {
   "name": "hello",
   "version": "0.1.0",
-  "description": "Simple \"Hello, World\" module",
+  "description": "Simple \"Hello, World\" package",
   "main": "build/index.js",
   "scripts": {
     "build": "babel src --out-dir build",
