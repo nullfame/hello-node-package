@@ -4,6 +4,10 @@
   "description": "Simple \"Hello, World\" module",
   "main": "src/index.js",
   "scripts": {
+    "build": "babel src --out-dir build",
+    "clean": "rm -rf build/",
+    "prepublish": "npm run clean | npm run build",
+    "preversion": "npm run clean | npm run build",
     "test": "babel-node tests/test.js"
   },
   "keywords": [
