@@ -14,6 +14,10 @@ I include the build/ directory because my anticipated use case is to store this 
 
 ## Usage
 
+(in your own node app)
+
+Of course you need to `npm install https://github.com/nullfame/hello-node-package.git`
+
 ```javascript
 const hello = require('Hello')
 
@@ -29,6 +33,8 @@ Hello, You
 ```
 
 ## Scripts
+
+(assuming you have cloned this repo)
 
 * `npm test` runs [tests/test.js](tests/test.js), which outputs the above
 * `npm run build` runs the Babel transpiling from src/ to build/
